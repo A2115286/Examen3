@@ -11,5 +11,11 @@
       <label for="proveedor-id">Id Proveedor: </label>
       <input id="proveedor-id" [(ngModel)]="proveedor.id" placeholder="id">
     </div>   
+
+    <mat-card>
+      <button class="actualizar-button" (click)="actualizar(proveedorName.value, proveedorId.value  ); proveedorName.value=''; proveedorId.value=''  " >
+        Actualice el proveedor
+      </button>
+      </mat-card>
 </div>
 
